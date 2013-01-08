@@ -1,0 +1,21 @@
+$body-family: Georgia, serif;
+$display-family: LeagueGothic, sans-serif;
+$footer-family: Arial, sans-serif;
+
+$tiny: 8.889px;
+$smaller: 13.333px;
+$small: 18px;
+$normal: 20px;
+$large: 30px;
+$big: 45px;
+$huge: 67.5px;
+
+$line-height: 1.6;
+
+$vertical-margin: $normal * $line-height;
+
+@font-face {
+	font-family: 'LeagueGothic';
+	src: url('../fonts/league-gothic.eot');
+	src: url('../fonts/league-gothic.eot?iefix') format('eot'), url('../fonts/league-gothic.woff') format('woff'), url('../fonts/league-gothic.ttf')  format('truetype'), url('../fonts/league-gothic.svg#svgLeagueGothic') format('svg');
+}

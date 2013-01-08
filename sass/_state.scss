@@ -1,0 +1,47 @@
+@media screen and (max-width: 480px) {
+	body {
+		font-size: $normal;
+	}
+
+	header-home,
+	#content,
+	footer {
+		width: 94%;
+		padding: 0 3%;
+		.feature {
+			width: 100%;
+			padding-right: 0;
+			p {
+				font-size: $normal;
+			}
+		}
+	}
+	h1 {
+		font-size: $big;
+	}
+	h3 {
+		font-size: $large; 
+	}
+	#portfolio .go-to-link {
+		display: none;
+	}	
+	#about img {
+		display: none;
+	}
+	.feature {
+		text-align: center;
+		margin-left: 0;
+	}
+	#mailchimp {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 481px) {
+	#header-home,
+	#content,
+	footer {
+		max-width: 728px;
+		padding: 0 20px;
+	}
+}

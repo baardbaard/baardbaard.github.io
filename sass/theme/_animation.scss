@@ -1,0 +1,42 @@
+@mixin animation($name, $duration) { 
+	-webkit-animation: $name $duration;
+	-moz-animation: $name $duration;
+	-ms-animation: $name $duration;
+	animation: $name $duration;
+}
+
+@-webkit-keyframes color-change {
+	0% {
+		background-color: $first-color;
+	}
+	100% {
+		background-color: lighten($first-color, 20%);
+	}
+}
+
+@-moz-keyframes color-change {
+	0% {
+		background-color: $first-color;
+	}
+	100% {
+		background-color: lighten($first-color, 20%);
+	}
+}
+
+@-ms-keyframes color-change {
+	0% {
+		background-color: $first-color;
+	}
+	100% {
+		background-color: lighten($first-color, 20%);
+	}
+}
+
+@keyframes color-change {
+	0% {
+		background-color: $first-color;
+	}
+	100% {
+		background-color: lighten($first-color, 20%);
+	}
+}

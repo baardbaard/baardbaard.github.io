@@ -1,0 +1,17 @@
+section {
+	max-width: 728px;
+	padding: 0 3%;
+	margin: $vertical-margin auto;
+	@include clearfix;
+}
+
+@media screen and (max-width: 480px) {
+	section {
+		p {
+			font-size: $small;
+		}
+		label {
+			font-size: $normal;
+		}
+	}
+}

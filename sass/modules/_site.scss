@@ -1,0 +1,14 @@
+.site {
+	margin-bottom: $vertical-margin;
+	overflow: auto;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@media screen and (max-width: 480px) {
+		@include grid(48, 2);
+		margin-bottom: 0;
+		p {
+			font-size: $small;
+		}
+	}
+}

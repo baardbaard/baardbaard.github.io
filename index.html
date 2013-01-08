@@ -1,0 +1,112 @@
+---
+layout: default
+title: Home
+---
+
+<header id="header">
+	<a href="/">
+		<div class="icons-baardbaard"></div>
+		<h1>Baardbaard</h1>
+	</a>
+	<p>Baardbaard is Stef Thoen, web designer en developer.</p>
+	<p>Ik maak no-nonsense websites.</p>
+</header>
+
+<section id="intro" class="l-wrapper l-content l-content-page">
+	<h2 class="division">Wat doe ik?</h2>
+	<div id="features">
+		<article class="feature">
+			<div class="icon icons-analyze"></div>
+			<h3>Het ontwerp</h3>
+			<p>Ik onderzoek, schets en bouw prototypes. Ik zorg voor een overzichtelijk en doeltreffend ontwerp, een website waar bezoekers graag naar terugkomen.</p>
+		</article>
+		<article class="feature">
+			<div class="icon icons-build"></div>
+			<h3>De bouw</h3>
+			<p>(Mobiele) websites en webapps gebouwd met open source techniek. Mijn gereedschap: HTML5, CSS3, JavaScript, WordPress en Responsive Web Design.</p>
+		</article>
+		<article class="feature">
+			<div class="icon icons-service"></div>
+			<h3>De service</h3>
+			<p>Na oplevering voer ik onderhoud uit, installeer upgrades en 'tweak' de websites voor optimale veiligheid en conversie.</p>
+		</article>
+	</div> <!-- div#features -->
+</section>
+
+<section id="portfolio" class="l-wrapper l-content l-content-page">
+	<h2 class="division">Wat maak ik?</h2>
+	<article class="site">
+	<h3>Sieglinde Seijffer</h3>
+	<div class="site-image">
+		<a class="go-to-link" href="http://sieglindeseijffer.nl" target="_blank">Ga naar de website</a>
+		<a href="http://sieglindeseijffer.nl" target="_blank"><img src="images/portfolio/sieglinde-seijffer.jpg" alt="Sieglinde Seijffer"></a>
+	</div> <!-- div.site-image -->
+		<p>Sieglinde Seijffer is een loopbaancoach met jarenlange werkervaring. Zij werkt sinds een jaar als zelfstandige. Voor haar ontwierp ik een huisstijl en bijbehorende website.</p>
+	</article>
+	
+	<article class="site">
+	<h3>Top Judo Utrecht</h3>
+	<div class="site-image">
+		<a class="go-to-link" href="http://topjudoutrecht.nl" target="_blank">Ga naar de website</a>
+		<a href="http://topjudoutrecht.nl" target="_blank"><img src="images/portfolio/top-judo-utrecht.jpg" alt="Top Judo Utrecht"></a>
+	</div> <!-- div.site-image -->
+	<p>Met hun nieuwe website onderscheidt Top Judo Utrecht zich van andere judoscholen in Nederland en laat zo een professionele indruk achter bij judoka's, pers en sponsoren.</p>
+	</article>
+
+	<article class="site"> 
+		<h3>The Black Atlantic</h3>
+		<div class="site-image">
+			<a class="go-to-link" href="http://theblackatlantic.com" target="_blank">Ga naar de website</a>
+		<a href="http://theblackatlantic.com" target="_blank"><img src="images/portfolio/the-black-atlantic.jpg" alt="The Black Atlantic"></a>
+	</div> <!-- div.site-image -->
+	<p>De website voor de Groningse indieband The Black Atlantic is genomineerd voor de Interactive Awards 2011. De webshop is gebruikt om geld in te zamelen voor de opnames en productie van hun EP <em>Darkling, I Listen</em>.</p>
+	</article>
+
+	<article class="site">
+		<h3>Rabonk</h3>
+	<div class="site-image">
+		<a class="go-to-link" href="http://rabonk.com" target="_blank">Ga naar de website</a>
+		<a href="http://rabonk.com" target="_blank"><img src="images/portfolio/rabonk.jpg" alt="Rabonk"></a>
+	</div> <!-- div.site-image -->
+	<p>De creatieve machinebouwers van Rabonk hebben met rabonk.com een nieuw platform voor hun interactieve installaties.</p>
+	</article>
+
+	<article class="site">
+		<h3>Jako24</h3>
+	<div class="site-image">
+		<a class="go-to-link" href="http://jako24.nl" target="_blank">Ga naar de website</a>
+		<a href="http://jako24.nl" target="_blank"><img src="images/portfolio/jako24.jpg" alt="Jako24"></a>
+	</div> <!-- div.site-image -->
+	<p>Jako24 verkoopt bouwmaterialen. Handig: Bezoekers stellen een lijst van producten samen en krijgen live een offerte.</p>
+	</article>
+</section>
+
+<section id="blog" class="l-wrapper l-content l-content-page" style="display: none;">
+	<h2 class="division">Blog</h2>
+		{% for post in site.posts offset: 0 limit: 1 %}
+		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<p><time>{{ post.date | date: "%d-%m-%Y" }}</time> - {{ post.excerpt }} <a href="{{ post.url }}"></p>
+		<p class="center">Lees meer</a> of <a href="/blog">bekijk het archief</a>.
+		</p>
+		{% endfor %}
+</section>
+<section id="about" class="l-wrapper l-content l-content-page">
+		<h2 class="division">Wie ben ik?</h2>
+		<figure><img src="images/about.png" alt="Portret Stef"></figure>
+		<p>Baardbaard is Stef Thoen. Ik heb een achtergrond in Informatica en Filosofie en werk als freelance web designer en developer in Groningen.</p>
+		<p>Baardbaard wil websites simpeler maken. Websites met &eacute;&eacute;n concreet idee, zonder toeters en bellen. No-nonsense websites.</p>
+		<p>Als ik geen websites maak gaat de laptop uit. Ik ben een triathleet en hiker. In de zomer trek ik met rugtas door Noorwegen of IJsland, waar baarden het best gedijen.</p>
+</section>
+<section id="contact" class="l-wrapper l-content l-content-page">
+	<h2 class="division">Trek eens aan m'n baard</h2>
+	<p>Denk je dat ik je ergens bij kan helpen? Ik spreek graag een keertje af voor een kop koffie.</p>
+	<p>Stuur mij een e-mail op <a href="mailto:stef@baardbaard.nl">stef@baardbaard.nl</a> of gebruik het contactformulier. Bellen kan natuurlijk ook. Bel me op 06 - 3839 2640. Of kom eens langs op kantoor: <a href="https://maps.google.com/maps?q=herestraat+106+groningen&hl=en&sll=37.0625,-95.677068&sspn=48.688845,93.076172&hnear=Herestraat+106,+Binnenstad,+Groningen,+The+Netherlands&t=m&z=16&iwloc=r0">Herestraat 106 in Groningen</a>.</p>
+	<form action="/contact" method="POST">
+		<label>E-mail:
+			<input type="email" name="email" />
+		</label>
+		<label>Bericht: <textarea name="message"></textarea></label>
+		<input type="submit" id="submit" value="Verstuur!" />
+	</form>
+	<div id="result" class="l-wrapper l-content l-content-page"></div>
+</section>

@@ -1,0 +1,115 @@
+header {
+	p {
+		text-align: center;
+		margin: 0;
+		a {
+			font-weight: normal;
+		}
+	}
+}
+
+.icons-baardbaard {
+	width: 102px; 
+	height: 128px; 
+	margin: 0 auto;
+	&:hover { 
+		background-position: -102px 0;
+	}
+}
+
+.icons-analyze {
+	width: 103px;
+}
+
+.icons-build {
+	height: 113px; 
+	width: 87px;
+	margin-top: -17px;
+}
+
+.icons-service {
+	width: 134px; 
+}
+
+.icons-twitter,
+.icons-linkedin,
+.icons-github,
+.icons-rss {
+	height: 32px;
+	width: 32px;
+	margin-right: 10px;
+	border-bottom: none;
+	color: $third-color;
+	display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+	&:hover { 
+		border-bottom: none;
+	}
+}
+
+footer {
+	#social-icons {
+		li {
+			display: inline; 
+		}
+	}
+} 
+
+#about {
+	img {
+		float: right;
+		padding-left: 2em;
+		padding-bottom: 2em;
+	}
+	@media screen and (max-width: 480px) {
+		figure {
+			@include grid(48);
+			height: 221px;
+			margin-bottom: $vertical-margin;
+		}
+		img {
+			position: absolute;
+			left: 50%;
+			width: 213px;
+			margin-left: -106px;
+			padding-left: 0;
+			padding-bottom: 0;
+		}
+		p {
+			clear: left;
+		}
+	}
+}
+
+#social {
+	p {
+		margin: 0; 
+	}
+}
+
+#contact-data {
+	margin-left: 0;
+}
+
+#social-icons {
+	margin-bottom: $vertical-margin;
+	margin-top: $vertical-margin;
+}
+
+#mailchimp {
+	clear: left;
+	float: left;
+	margin-bottom: $vertical-margin * 1.5; 
+}
+
+#copyright {
+	width: 100%;
+	float: left;
+	text-align: center;
+	color: darken($third-color, 40%); 
+	a {
+		color: darken($third-color, 40%); 
+	}
+}

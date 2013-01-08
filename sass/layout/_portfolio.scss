@@ -1,0 +1,46 @@
+#portfolio {
+	img {
+		width: 98%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		@include box-shadow(rgba(black, 0.3) 0 0 8px 1px);
+		&:hover {
+			@include box-shadow(rgba(black, 0.5) 0 0 8px 1px);
+		}
+	}
+	.go-to-link {
+		padding: .5em 2em;
+		position: absolute;
+		background-color: $first-color;
+		color: $third-color;
+		top: 84%; 
+		font-size: $smaller;
+		letter-spacing: .1em;
+		right: 0;
+		border-bottom: none;
+		&:after {
+			z-index: -10;
+			content: ' ';  
+			position: absolute;  
+			width: 0;  
+			height: 0;  
+			right: 0px;  
+			top: -10px;
+			border-width: 5px 10px;  
+			border-style: solid;  
+			border-color: transparent transparent $second-color $second-color;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#portfolio {
+		img {
+			@include box-shadow(none);
+			&:hover {
+				@include box-shadow(none);
+			}
+		}
+	}
+}

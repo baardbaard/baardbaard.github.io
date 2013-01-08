@@ -1,0 +1,9 @@
+.result {
+	display: none; 
+	p {
+		background-color: $second-color;
+		padding: 1em;
+		text-align: center;
+		@include border-radius(5px);
+	}
+}

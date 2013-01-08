@@ -1,0 +1,57 @@
+* { 
+	@include box-sizing(border-box); 
+}
+
+body {
+	position: relative;
+	font-family: $body-family;
+	font-size: $normal;
+	line-height: $line-height;
+	background: $fourth-color url("../images/bg.png");
+	color: $first-color; 
+	border-top: 6px solid $first-color;
+}
+
+a {
+	text-decoration: none;
+	color: $first-color;
+	border-bottom: 1px solid $second-color;
+}
+
+a:hover {
+	border-bottom: 1px solid $first-color;
+}
+
+p {
+	margin: $vertical-margin 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $display-family;
+	letter-spacing: .1em;
+	text-align: center;
+	text-transform: uppercase;
+	color: $first-color;
+}
+
+h1 {
+	font-size: $huge;
+	@media screen and (max-width: 480px) {
+		font-size: $big;
+	}
+}
+
+h3 {
+	font-size: $big;
+	@media screen and (max-width: 480px) {
+		font-size: $large;
+	}
+}
+
+time {
+	color: lighten($first-color, 20%);
+}
+
+em {
+	font-style: italic;
+}

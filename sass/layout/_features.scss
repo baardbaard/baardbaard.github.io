@@ -1,0 +1,7 @@
+#features {
+	@include grid(48);
+	margin-top: $vertical-margin;
+	@media screen and (max-width: 480px) {
+		margin-top: 0 !important;
+	}
+}

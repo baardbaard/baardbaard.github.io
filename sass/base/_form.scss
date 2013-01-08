@@ -1,0 +1,53 @@
+label {
+	float: left;
+	width: 100%;
+	margin-bottom: $vertical-margin;
+}
+
+input[type="email"],
+textarea {
+	@include grid(48);
+	padding: .4em;
+	border: 1px solid #dfd2bb;
+	font-size: $normal;
+	@include border-radius(5px);
+}
+
+textarea {
+	height: 300px;
+}
+
+input[type="submit"] {
+	@include grid(48);
+	padding: $vertical-margin / 2 0;
+	border: none;
+	font-size: $large;
+	font-family: $display-family;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: $third-color;
+	background-color: $first-color;
+	cursor: pointer;
+	&:hover {
+		background-color: lighten($first-color, 20%);
+		@include animation(color-change, 200ms);
+	}
+	@include border-radius(5px);
+}
+
+footer {
+	input[type="email"] {
+		float: left;
+		width: 68%;
+		margin-right: 3%;
+		padding: .2em 2%;
+	}
+
+	input[type="submit"] {
+		float: left;
+		width: 23%; 
+		padding: .2em 1%;
+		font-size: $normal;
+	}
+}
+

@@ -1,0 +1,698 @@
+/* line 17, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url("../fonts/league-gothic.eot");
+  src: url("../fonts/league-gothic.eot?iefix") format("eot"), url("../fonts/league-gothic.woff") format("woff"), url("../fonts/league-gothic.ttf") format("truetype"), url("../fonts/league-gothic.svg#svgLeagueGothic") format("svg"); }
+
+@-webkit-keyframes color-change {
+  /* line 9, ../sass/theme/_animation.scss */
+  0% {
+    background-color: #333333; }
+
+  /* line 12, ../sass/theme/_animation.scss */
+  100% {
+    background-color: #666666; } }
+
+@-moz-keyframes color-change {
+  /* line 18, ../sass/theme/_animation.scss */
+  0% {
+    background-color: #333333; }
+
+  /* line 21, ../sass/theme/_animation.scss */
+  100% {
+    background-color: #666666; } }
+
+@-ms-keyframes color-change {
+  /* line 27, ../sass/theme/_animation.scss */
+  0% {
+    background-color: #333333; }
+
+  /* line 30, ../sass/theme/_animation.scss */
+  100% {
+    background-color: #666666; } }
+
+@keyframes color-change {
+  /* line 36, ../sass/theme/_animation.scss */
+  0% {
+    background-color: #333333; }
+
+  /* line 39, ../sass/theme/_animation.scss */
+  100% {
+    background-color: #666666; } }
+
+/* =========== Semantic fluid grid */
+/*
+
+    Use '@include grid(12, 2)' to make a column. 
+    The first unit (12) is the column width.
+    The second unit (2) is the margin on both sides.
+    The margin will be auto substracted from the column width.
+    So don't recalculate the column width if you change your margin.
+    
+    To set different margins on both sides use '@include grid(12, 2, 3)'.
+    You can also use negative margins.
+    
+*/
+/* Use this mixin to reset your grid by example for your mobile articles */
+/* The clearfix mixin is necessary for the floats */
+/* line 1, ../sass/base/_elements.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 5, ../sass/base/_elements.scss */
+body {
+  position: relative;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1.6;
+  background: #fffbef url("../images/bg.png");
+  color: #333333;
+  border-top: 6px solid #333333; }
+
+/* line 15, ../sass/base/_elements.scss */
+a {
+  text-decoration: none;
+  color: #333333;
+  border-bottom: 1px solid #cccccc; }
+
+/* line 21, ../sass/base/_elements.scss */
+a:hover {
+  border-bottom: 1px solid #333333; }
+
+/* line 25, ../sass/base/_elements.scss */
+p {
+  margin: 32px 0; }
+
+/* line 29, ../sass/base/_elements.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: LeagueGothic, sans-serif;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333; }
+
+/* line 37, ../sass/base/_elements.scss */
+h1 {
+  font-size: 67.5px; }
+  @media screen and (max-width: 480px) {
+    /* line 37, ../sass/base/_elements.scss */
+    h1 {
+      font-size: 45px; } }
+
+/* line 44, ../sass/base/_elements.scss */
+h3 {
+  font-size: 45px; }
+  @media screen and (max-width: 480px) {
+    /* line 44, ../sass/base/_elements.scss */
+    h3 {
+      font-size: 30px; } }
+
+/* line 51, ../sass/base/_elements.scss */
+time {
+  color: #666666; }
+
+/* line 55, ../sass/base/_elements.scss */
+em {
+  font-style: italic; }
+
+/* line 1, ../sass/base/_form.scss */
+label {
+  float: left;
+  width: 100%;
+  margin-bottom: 32px; }
+
+/* line 8, ../sass/base/_form.scss */
+input[type="email"],
+textarea {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: .4em;
+  border: 1px solid #dfd2bb;
+  font-size: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+
+/* line 16, ../sass/base/_form.scss */
+textarea {
+  height: 300px; }
+
+/* line 20, ../sass/base/_form.scss */
+input[type="submit"] {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 16px 0;
+  border: none;
+  font-size: 30px;
+  font-family: LeagueGothic, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: white;
+  background-color: #333333;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  /* line 31, ../sass/base/_form.scss */
+  input[type="submit"]:hover {
+    background-color: #666666;
+    -webkit-animation: color-change 200ms;
+    -moz-animation: color-change 200ms;
+    -ms-animation: color-change 200ms;
+    animation: color-change 200ms; }
+
+/* line 39, ../sass/base/_form.scss */
+footer input[type="email"] {
+  float: left;
+  width: 68%;
+  margin-right: 3%;
+  padding: .2em 2%; }
+/* line 46, ../sass/base/_form.scss */
+footer input[type="submit"] {
+  float: left;
+  width: 23%;
+  padding: .2em 1%;
+  font-size: 20px; }
+
+/* line 2, ../sass/layout/_intro.scss */
+#intro p {
+  font-size: 18px; }
+
+/* line 2, ../sass/layout/_portfolio.scss */
+#portfolio img {
+  width: 98%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px 1px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 8px 1px; }
+  /* line 8, ../sass/layout/_portfolio.scss */
+  #portfolio img:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 8px 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 8px 1px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 8px 1px; }
+/* line 12, ../sass/layout/_portfolio.scss */
+#portfolio .go-to-link {
+  padding: .5em 2em;
+  position: absolute;
+  background-color: #333333;
+  color: white;
+  top: 84%;
+  font-size: 13.333px;
+  letter-spacing: .1em;
+  right: 0;
+  border-bottom: none; }
+  /* line 22, ../sass/layout/_portfolio.scss */
+  #portfolio .go-to-link:after {
+    z-index: -10;
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0px;
+    top: -10px;
+    border-width: 5px 10px;
+    border-style: solid;
+    border-color: transparent transparent #cccccc #cccccc; }
+
+@media screen and (max-width: 480px) {
+  /* line 39, ../sass/layout/_portfolio.scss */
+  #portfolio img {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+    /* line 41, ../sass/layout/_portfolio.scss */
+    #portfolio img:hover {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; } }
+/* line 1, ../sass/layout/_header.scss */
+#header {
+  padding-top: 1em; }
+  /* line 3, ../sass/layout/_header.scss */
+  #header img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto; }
+  @media screen and (max-width: 480px) {
+    /* line 1, ../sass/layout/_header.scss */
+    #header {
+      float: left;
+      width: 91.66667%;
+      margin-left: 4.16667%;
+      margin-right: 4.16667%; } }
+
+/* line 1, ../sass/layout/_header-home.scss */
+#header-home {
+  max-width: 728px;
+  padding: 0 3%;
+  margin: 32px auto; }
+  /* line 5, ../sass/layout/_header-home.scss */
+  #header-home img {
+    display: block;
+    margin: 0 auto; }
+  /* line 9, ../sass/layout/_header-home.scss */
+  #header-home a {
+    border-bottom: none; }
+    /* line 11, ../sass/layout/_header-home.scss */
+    #header-home a:hover {
+      border-bottom: none; }
+
+/* line 1, ../sass/layout/_header-article.scss */
+.header-article {
+  position: relative; }
+  /* line 3, ../sass/layout/_header-article.scss */
+  .header-article img {
+    width: 100%; }
+
+/* line 1, ../sass/layout/_features.scss */
+#features {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 32px; }
+  @media screen and (max-width: 480px) {
+    /* line 1, ../sass/layout/_features.scss */
+    #features {
+      margin-top: 0 !important; } }
+
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  max-width: 768px;
+  margin: 16px auto;
+  color: white;
+  font-size: 13.333px;
+  font-family: Arial, sans-serif; }
+  /* line 9, ../sass/layout/_footer.scss */
+  footer h2 {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: .2em;
+    margin-top: 32px; }
+  /* line 16, ../sass/layout/_footer.scss */
+  footer li {
+    list-style-type: none;
+    margin-left: none; }
+  /* line 20, ../sass/layout/_footer.scss */
+  footer a {
+    color: white;
+    font-weight: normal;
+    border-bottom: none; }
+    /* line 24, ../sass/layout/_footer.scss */
+    footer a:hover {
+      border-bottom: 1px solid white; }
+  /* line 28, ../sass/layout/_footer.scss */
+  footer .widget {
+    float: left;
+    width: 29.16667%;
+    margin-left: 2.08333%;
+    margin-right: 2.08333%; }
+
+@media screen and (max-width: 480px) {
+  /* line 34, ../sass/layout/_footer.scss */
+  footer {
+    text-align: center; }
+    /* line 36, ../sass/layout/_footer.scss */
+    footer h2 {
+      text-align: center; }
+    /* line 39, ../sass/layout/_footer.scss */
+    footer .widget {
+      width: 100%;
+      margin-left: 0 !important; }
+    /* line 43, ../sass/layout/_footer.scss */
+    footer #friends {
+      display: none; }
+    /* line 47, ../sass/layout/_footer.scss */
+    footer #social h2:first-child, footer #social p {
+      display: none; }
+    /* line 50, ../sass/layout/_footer.scss */
+    footer #social #mailchimp {
+      display: none; } }
+/* line 1, ../sass/layout/_footer-wrapper.scss */
+#footer-wrapper {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  background: #333333 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC);
+  margin-top: 128px; }
+
+/* line 1, ../sass/layout/_l-wrapper.scss */
+.l-wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  overflow: auto; }
+
+@media screen and (max-width: 480px) {
+  /* line 1, ../sass/layout/_l-content.scss */
+  .l-content {
+    float: left;
+    width: 91.66667%;
+    margin-left: 4.16667%;
+    margin-right: 4.16667%; }
+    /* line 4, ../sass/layout/_l-content.scss */
+    .l-content p {
+      font-size: 18px; } }
+
+/* line 1, ../sass/layout/_l-content-page.scss */
+.l-content-page {
+  margin-top: 60px; }
+
+@media screen and (max-width: 480px) {
+  /* line 1, ../sass/layout/_related.scss */
+  #related {
+    float: left;
+    width: 95.83333%;
+    margin-left: 2.08333%;
+    margin-right: 2.08333%; } }
+
+/* line 1, ../sass/modules/_feature.scss */
+.feature {
+  float: left;
+  width: 29.16667%;
+  margin-left: 2.08333%;
+  margin-right: 2.08333%; }
+  @media screen and (max-width: 480px) {
+    /* line 1, ../sass/modules/_feature.scss */
+    .feature {
+      float: left;
+      width: 95.83333%;
+      margin-left: 2.08333%;
+      margin-right: 2.08333%;
+      margin-top: 16px; } }
+  /* line 7, ../sass/modules/_feature.scss */
+  .feature h3 {
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 0; }
+  /* line 12, ../sass/modules/_feature.scss */
+  .feature p {
+    margin-top: 0; }
+    @media screen and (max-width: 480px) {
+      /* line 12, ../sass/modules/_feature.scss */
+      .feature p {
+        text-align: center; } }
+
+/* line 1, ../sass/modules/_division.scss */
+.division {
+  border-bottom: 1px dashed black;
+  font-size: 30px;
+  margin-bottom: 32px; }
+  /* line 5, ../sass/modules/_division.scss */
+  .division span {
+    color: #cccccc; }
+
+/* line 1, ../sass/modules/_headline.scss */
+.headline {
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -350px;
+  text-align: center;
+  color: #fffbef;
+  text-shadow: rgba(0, 0, 255, 0.2) 1px 1px 0, rgba(0, 0, 255, 0.2) 2px 2px 0, rgba(0, 0, 255, 0.2) 3px 3px 0; }
+
+/* line 1, ../sass/modules/_excerpt.scss */
+.excerpt {
+  margin-top: 16px; }
+
+/* line 1, ../sass/modules/_site.scss */
+.site {
+  margin-bottom: 32px;
+  overflow: auto; }
+  /* line 4, ../sass/modules/_site.scss */
+  .site:last-child {
+    margin-bottom: 0; }
+  @media screen and (max-width: 480px) {
+    /* line 1, ../sass/modules/_site.scss */
+    .site {
+      float: left;
+      width: 91.66667%;
+      margin-left: 4.16667%;
+      margin-right: 4.16667%;
+      margin-bottom: 0; }
+      /* line 10, ../sass/modules/_site.scss */
+      .site p {
+        font-size: 18px; } }
+
+/* line 1, ../sass/modules/_site-image.scss */
+.site-image {
+  position: relative; }
+
+/* line 1, ../sass/modules/_icon.scss */
+.icon {
+  margin: 0 auto;
+  height: 96px; }
+
+/* line 1, ../sass/modules/_result.scss */
+.result {
+  display: none; }
+  /* line 3, ../sass/modules/_result.scss */
+  .result p {
+    background-color: #cccccc;
+    padding: 1em;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+
+/* line 1, ../sass/modules/_widget.scss */
+.widget {
+  float: left; }
+
+/* line 1, ../sass/modules/_byline.scss */
+.byline {
+  position: absolute;
+  width: 700px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  top: 74%;
+  left: 50%;
+  margin-left: -350px;
+  text-align: center;
+  letter-spacing: .1em; }
+
+/* line 2, ../sass/_non-modular.scss */
+header p {
+  text-align: center;
+  margin: 0; }
+  /* line 5, ../sass/_non-modular.scss */
+  header p a {
+    font-weight: normal; }
+
+/* line 11, ../sass/_non-modular.scss */
+.icons-baardbaard {
+  width: 102px;
+  height: 128px;
+  margin: 0 auto; }
+  /* line 15, ../sass/_non-modular.scss */
+  .icons-baardbaard:hover {
+    background-position: -102px 0; }
+
+/* line 20, ../sass/_non-modular.scss */
+.icons-analyze {
+  width: 103px; }
+
+/* line 24, ../sass/_non-modular.scss */
+.icons-build {
+  height: 113px;
+  width: 87px;
+  margin-top: -17px; }
+
+/* line 30, ../sass/_non-modular.scss */
+.icons-service {
+  width: 134px; }
+
+/* line 37, ../sass/_non-modular.scss */
+.icons-twitter,
+.icons-linkedin,
+.icons-github,
+.icons-rss {
+  height: 32px;
+  width: 32px;
+  margin-right: 10px;
+  border-bottom: none;
+  color: white;
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+  /* line 47, ../sass/_non-modular.scss */
+  .icons-twitter:hover,
+  .icons-linkedin:hover,
+  .icons-github:hover,
+  .icons-rss:hover {
+    border-bottom: none; }
+
+/* line 54, ../sass/_non-modular.scss */
+footer #social-icons li {
+  display: inline; }
+
+/* line 61, ../sass/_non-modular.scss */
+#about img {
+  float: right;
+  padding-left: 2em;
+  padding-bottom: 2em; }
+@media screen and (max-width: 480px) {
+  /* line 67, ../sass/_non-modular.scss */
+  #about figure {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 221px;
+    margin-bottom: 32px; }
+  /* line 72, ../sass/_non-modular.scss */
+  #about img {
+    position: absolute;
+    left: 50%;
+    width: 213px;
+    margin-left: -106px;
+    padding-left: 0;
+    padding-bottom: 0; }
+  /* line 80, ../sass/_non-modular.scss */
+  #about p {
+    clear: left; } }
+
+/* line 87, ../sass/_non-modular.scss */
+#social p {
+  margin: 0; }
+
+/* line 92, ../sass/_non-modular.scss */
+#contact-data {
+  margin-left: 0; }
+
+/* line 96, ../sass/_non-modular.scss */
+#social-icons {
+  margin-bottom: 32px;
+  margin-top: 32px; }
+
+/* line 101, ../sass/_non-modular.scss */
+#mailchimp {
+  clear: left;
+  float: left;
+  margin-bottom: 48px; }
+
+/* line 107, ../sass/_non-modular.scss */
+#copyright {
+  width: 100%;
+  float: left;
+  text-align: center;
+  color: #999999; }
+  /* line 112, ../sass/_non-modular.scss */
+  #copyright a {
+    color: #999999; }
+
+/* line 106, icons/*.png */
+.icons-sprite, .icons-analyze, .icons-baardbaard, .icons-bg, .icons-build, .icons-github, .icons-linkedin, .icons-rss, .icons-service, .icons-twitter {
+  background: url('/images/icons-s91da8fd514.png') no-repeat; }
+
+/* line 60, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-analyze {
+  background-position: 0 -163px; }
+
+/* line 60, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-baardbaard {
+  background-position: 0 0; }
+
+/* line 60, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-bg {
+  background-position: 0 -128px; }
+
+/* line 60, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-build {
+  background-position: 0 -355px; }
+
+/* line 60, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-github {
+  background-position: 0 -468px; }
+
+/* line 60, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-linkedin {
+  background-position: 0 -500px; }
+
+/* line 60, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-rss {
+  background-position: 0 -532px; }
+
+/* line 60, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-service {
+  background-position: 0 -259px; }
+
+/* line 60, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 -564px; }

@@ -1,0 +1,5 @@
+#footer-wrapper {
+	@include grid(48);
+	background: $first-color url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC);
+	margin-top: $vertical-margin * 4;
+}
