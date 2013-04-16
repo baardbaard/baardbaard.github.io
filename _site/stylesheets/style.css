@@ -546,6 +546,10 @@ footer {
   text-align: center;
   letter-spacing: .1em; }
 
+/* line 1, ../sass/modules/_readmore.scss */
+.readmore {
+  text-align: center; }
+
 /* line 2, ../sass/_non-modular.scss */
 header p {
   text-align: center;

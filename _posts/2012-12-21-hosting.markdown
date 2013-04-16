@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hallo
+image: /images/blog/mountains.jpg
 excerpt: Hallo wereld, dit is mijn eerste post!  Hallo wereld, dit is mijn eerste post!  Hallo wereld, dit is mijn eerste post!  Hallo wereld, dit is mijn eerste post!  Hallo wereld, dit is mijn eerste post!
 ---
 

@@ -81,13 +81,12 @@ title: Home
 	</article>
 </section>
 
-<section id="blog" class="l-wrapper l-content l-content-page" style="display: none;">
+<section id="blog" class="l-wrapper l-content l-content-page">
 	<h2 class="division">Blog</h2>
 		{% for post in site.posts offset: 0 limit: 1 %}
 		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		<p><time>{{ post.date | date: "%d-%m-%Y" }}</time> - {{ post.excerpt }} <a href="{{ post.url }}"></p>
-		<p class="center">Lees meer</a> of <a href="/blog">bekijk het archief</a>.
-		</p>
+		<p><time>{{ post.date | date: "%d-%m-%Y" }}</time> - {{ post.excerpt }}</p>
+			<p class="readmore"><a href="{{ post.url }}">Lees meer</a> of <a href="/blog">bekijk het archief</a>.</p>
 		{% endfor %}
 </section>
 <section id="about" class="l-wrapper l-content l-content-page">
