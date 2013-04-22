@@ -36,12 +36,39 @@ title: Home
 <section id="portfolio" class="l-wrapper l-content l-content-page">
 	<h2 class="division">Wat maak ik?</h2>
 	<article class="site">
+	<h3>Parcival IT Projecten</h3>
+	<div class="site-image">
+		<a class="go-to-link" href="http://parcival-it.nl" target="_blank">Ga naar de website</a>
+		<a href="http://parcival-it.nl" target="_blank"><img src="images/portfolio/parcival-it.jpg" alt="Parcival IT Projecten"></a>
+	</div> <!-- div.site-image -->
+	<p>Voor Parcival IT Projecten maakte ik een responsive one-page WordPress website. Met de vaste fotografe <a target="_blank" href="http://suzicolpa.nl">Suzi Colpa</a> zijn we naar het Muiderslot gegaan om foto's te maken.</p>
+	</article>
+
+	<article class="site">
 	<h3>Sieglinde Seijffer</h3>
 	<div class="site-image">
 		<a class="go-to-link" href="http://sieglindeseijffer.nl" target="_blank">Ga naar de website</a>
 		<a href="http://sieglindeseijffer.nl" target="_blank"><img src="images/portfolio/sieglinde-seijffer.jpg" alt="Sieglinde Seijffer"></a>
 	</div> <!-- div.site-image -->
-		<p>Sieglinde Seijffer is een loopbaancoach met jarenlange werkervaring. Zij werkt sinds een jaar als zelfstandige. Voor haar ontwierp ik een huisstijl en bijbehorende website.</p>
+		<p>Sieglinde Seijffer is een ervaren loopbaancoach, maar werkt sinds een jaar als zelfstandige. Voor haar ontwierp ik een huisstijl en bijbehorende website.</p>
+	</article>
+	
+	<article class="site">
+	<h3>Project 28</h3>
+	<div class="site-image">
+		<a class="go-to-link" href="http://project28.org" target="_blank">Ga naar de website</a>
+		<a href="http://project28.org" target="_blank"><img src="images/portfolio/project28.jpg" alt="Project 28"></a>
+	</div> <!-- div.site-image -->
+	<p>Project 28 is een concept album en een eerbetoon aan pop-iconen uit de 27 club. De website combineert muziek, haiku's en foto's om het idee van onsterfelijkheid te vatten.</p>
+	</article>
+	
+	<article class="site">
+	<h3>Stichting Culturele Kruisbestuiving</h3>
+	<div class="site-image">
+		<a class="go-to-link" href="http://culturelekruisbestuiving.nl" target="_blank">Ga naar de website</a>
+		<a href="http://culturelekruisbestuiving.nl" target="_blank"><img src="images/portfolio/stichting-culturele-kruisbestuiving.jpg" alt="Stichting Culturele Kruisbestuiving"></a>
+	</div> <!-- div.site-image -->
+	<p>SCK is een stichting die samenwerking tussen verschillende kunstvormen stimuleert. Ik maakte een minimalistische responsive website waar de stichting eenvoudig een overzicht van haar projecten mee geeft.</p>
 	</article>
 	
 	<article class="site">
@@ -53,35 +80,9 @@ title: Home
 	<p>Met hun nieuwe website onderscheidt Top Judo Utrecht zich van andere judoscholen in Nederland en laat zo een professionele indruk achter bij judoka's, pers en sponsoren.</p>
 	</article>
 
-	<article class="site"> 
-		<h3>The Black Atlantic</h3>
-		<div class="site-image">
-			<a class="go-to-link" href="http://theblackatlantic.com" target="_blank">Ga naar de website</a>
-		<a href="http://theblackatlantic.com" target="_blank"><img src="images/portfolio/the-black-atlantic.jpg" alt="The Black Atlantic"></a>
-	</div> <!-- div.site-image -->
-	<p>De website voor de Groningse indieband The Black Atlantic is genomineerd voor de Interactive Awards 2011. De webshop is gebruikt om geld in te zamelen voor de opnames en productie van hun EP <em>Darkling, I Listen</em>.</p>
-	</article>
-
-	<article class="site">
-		<h3>Rabonk</h3>
-	<div class="site-image">
-		<a class="go-to-link" href="http://rabonk.com" target="_blank">Ga naar de website</a>
-		<a href="http://rabonk.com" target="_blank"><img src="images/portfolio/rabonk.jpg" alt="Rabonk"></a>
-	</div> <!-- div.site-image -->
-	<p>De creatieve machinebouwers van Rabonk hebben met rabonk.com een nieuw platform voor hun interactieve installaties.</p>
-	</article>
-
-	<article class="site">
-		<h3>Jako24</h3>
-	<div class="site-image">
-		<a class="go-to-link" href="http://jako24.nl" target="_blank">Ga naar de website</a>
-		<a href="http://jako24.nl" target="_blank"><img src="images/portfolio/jako24.jpg" alt="Jako24"></a>
-	</div> <!-- div.site-image -->
-	<p>Jako24 verkoopt bouwmaterialen. Handig: Bezoekers stellen een lijst van producten samen en krijgen live een offerte.</p>
-	</article>
 </section>
 
-<section id="blog" class="l-wrapper l-content l-content-page">
+<section id="blog" class="l-wrapper l-content l-content-page" style="display: none;">
 	<h2 class="division">Blog</h2>
 		{% for post in site.posts offset: 0 limit: 1 %}
 		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
