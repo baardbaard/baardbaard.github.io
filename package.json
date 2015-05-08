@@ -1,0 +1,15 @@
+{
+  "name": "baardbaard",
+  "version": "3.0.0",
+  "author": "Stef Thoen",
+  "homepage": "http://www.baardbaard.nl",
+  "repository": "https://baardbaard@bitbucket.org/baardbaard/baardbaard.git",
+  "description": "Baardbaard",
+  "devDependencies": {
+    "browser-sync": "^2.6.9",
+    "gulp": "^3.8.11",
+    "gulp-sass": "^1.3.3",
+    "gulp-svg-sprite": "^1.1.2",
+    "vinyl": "^0.4.6"
+  }
+}

@@ -1,0 +1,24 @@
+%svg-common {
+	background: url(svg/sprite.css.svg) no-repeat;
+}
+
+.svg-baardbaard_logo {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-baardbaard_logo-dims {
+	width: 260.6px;
+	height: 326.9px;
+}
+
+.svg-baardbaard_logo_knipoog {
+	@extend %svg-common;
+	background-position: 99.69395562356544% 0;
+}
+
+.svg-baardbaard_logo_knipoog-dims {
+	width: 260.6px;
+	height: 326.9px;
+}
+

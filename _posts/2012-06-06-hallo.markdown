@@ -1,7 +1,0 @@
----
-layout: post
-title: Hallo
-excerpt: Hallo wereld, dit is mijn eerste post!  Hallo wereld, dit is mijn eerste post!  Hallo wereld, dit is mijn eerste post!  Hallo wereld, dit is mijn eerste post!  Hallo wereld, dit is mijn eerste post!
----
-
-Hallo wereld, dit is mijn eerste post!
