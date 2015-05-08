@@ -1,10 +1,5 @@
-%svg-common {
-	background: url(svg/sprite.css.svg) no-repeat;
-}
-
 .svg-baardbaard_logo {
-	@extend %svg-common;
-	background-position: 0 0;
+	background: url(svg/sprite.css.svg) 0 0 no-repeat;
 }
 
 .svg-baardbaard_logo-dims {
@@ -13,8 +8,7 @@
 }
 
 .svg-baardbaard_logo_knipoog {
-	@extend %svg-common;
-	background-position: 100% 0;
+	background: url(svg/sprite.css.svg) 100% 0 no-repeat;
 }
 
 .svg-baardbaard_logo_knipoog-dims {

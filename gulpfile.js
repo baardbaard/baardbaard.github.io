@@ -35,8 +35,9 @@ gulp.task('svg', function() {
 			css: { // Activate the «css» mode
 				bust: false,
 				render: {
-					scss: true // Activate CSS output (with default options)
-				}
+					css: true // Activate CSS output (with default options)
+				},
+				example: true
 			}
 		}
 	}))
