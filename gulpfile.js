@@ -25,9 +25,6 @@ gulp.task('scss', function() {
 		.pipe(reload({stream: true}));
 });
 
-config = {
-};
-
 gulp.task('svg', function() {
 	gulp.src(paths.svg)
 	.pipe(svgSprite({
