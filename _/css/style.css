@@ -175,47 +175,42 @@ em {
     #features {
       margin-top: 0 !important; } }
 
-footer {
+.footer {
   max-width: 768px;
   margin: 16px auto;
-  color: #fff;
   font-size: 13.333px;
-  font-family: Arial, sans-serif; }
-  footer h2 {
-    color: #fff;
-    text-align: left;
+  font-family: Arial, sans-serif;
+  color: #fff; }
+  .footer h2 {
+    margin-top: 32px;
     font-size: 20px;
     letter-spacing: .2em;
-    margin-top: 32px; }
-  footer li {
-    list-style-type: none;
-    margin-left: none; }
-  footer a {
     color: #fff;
+    text-align: left; }
+  .footer ul {
+    padding-left: 0; }
+  .footer li {
+    margin-left: none;
+    list-style-type: none; }
+  .footer a {
+    border-bottom: 0;
     font-weight: normal;
-    border-bottom: none; }
-    footer a:hover {
+    color: #fff; }
+    .footer a:hover {
       border-bottom: 1px solid #fff; }
-  footer .widget {
+  .footer .widget {
     float: left;
     width: 29.16667%;
     margin-left: 2.08333%;
     margin-right: 2.08333%; }
-
-@media screen and (max-width: 480px) {
-  footer {
-    text-align: center; }
-    footer h2 {
+  @media screen and (max-width: 480px) {
+    .footer footer {
       text-align: center; }
-    footer .widget {
-      width: 100%;
-      margin-left: 0 !important; }
-    footer #friends {
-      display: none; }
-    footer #social h2:first-child, footer #social p {
-      display: none; }
-    footer #social #mailchimp {
-      display: none; } }
+      .footer footer h2 {
+        text-align: center; }
+      .footer footer .widget {
+        width: 100%;
+        margin-left: 0 !important; } }
 
 #footer-wrapper {
   float: left;

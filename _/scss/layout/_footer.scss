@@ -1,54 +1,52 @@
-footer {
+.footer {
 	max-width: 768px;
-	//padding: 0 3%;
-	//@include clearfix; 
 	margin: $vertical-margin * .5 auto;
-	color: $third-color;
 	font-size: $smaller;
 	font-family: $footer-family;
+	color: $third-color;
+
 	h2 {
-		color: $third-color;
-		text-align: left;
+		margin-top: $vertical-margin;
 		font-size: $normal;
 		letter-spacing: .2em;
-		margin-top: $vertical-margin;
-	}
-	li {
-		list-style-type: none;
-		margin-left: none;
-	}	
-	a {
 		color: $third-color;
+		text-align: left;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		margin-left: none;
+		list-style-type: none;
+	}	
+
+	a {
+		border-bottom: 0;
 		font-weight: normal;
-		border-bottom: none;
+		color: $third-color;
+
 		&:hover {
 			border-bottom: 1px solid $third-color;
 		}
 	}
+
 	.widget {
 		@include grid(16, 1);
 	}
-}
 
-@media screen and (max-width: 480px) {
-	footer {
-		text-align: center;
-		h2 {
+	@media screen and (max-width: 480px) {
+		footer {
 			text-align: center;
-		}
-		.widget {
-			width: 100%;
-			margin-left: 0 !important;
-		}
-		#friends {
-			display: none;
-		}
-		#social {
-			h2:first-child, p {
-				display: none;
+
+			h2 {
+				text-align: center;
 			}
-			#mailchimp {
-				display: none;
+
+			.widget {
+				width: 100%;
+				margin-left: 0 !important;
 			}
 		}
 	}
