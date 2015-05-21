@@ -1,11 +1,13 @@
-#header {
-	padding-top: 1em;
+.header {
+	padding-top: 2em;
 
-	img {
-		width: 100%;
-		height: auto;
+	&__title {
+		margin: 0;
+	}
+
+	&__logo {
 		margin: 0 auto;
-		display: block;
+		display: block !important;
 	}
 
 	@media screen and (max-width: 480px) {

@@ -1,18 +1,48 @@
-.svg-baardbaard_logo {
+.svg-feature_build {
 	background: url(svg/sprite.css.svg) 0 0 no-repeat;
 }
 
-.svg-baardbaard_logo-dims {
-	width: 102px;
-	height: 127px;
+.svg-feature_build-dims {
+	width: 128px;
+	height: 128px;
 }
 
-.svg-baardbaard_logo_knipoog {
+.svg-feature_design {
+	background: url(svg/sprite.css.svg) 55.65217391304348% 0 no-repeat;
+}
+
+.svg-feature_design-dims {
+	width: 128px;
+	height: 128px;
+}
+
+.svg-feature_service {
+	background: url(svg/sprite.css.svg) 0 100% no-repeat;
+}
+
+.svg-feature_service-dims {
+	width: 128px;
+	height: 128px;
+}
+
+.svg-logo,
+.svg-logo\:regular {
+	background: url(svg/sprite.css.svg) 50% 100% no-repeat;
+}
+
+.svg-logo-dims {
+	width: 102px;
+	height: 128px;
+}
+
+.svg-logo:hover,
+.svg-logo\:hover {
 	background: url(svg/sprite.css.svg) 100% 0 no-repeat;
 }
 
-.svg-baardbaard_logo_knipoog-dims {
+.svg-logo-dims:hover,
+.svg-logo\:hover-dims {
 	width: 102px;
-	height: 127px;
+	height: 128px;
 }
 

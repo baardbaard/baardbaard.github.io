@@ -134,15 +134,15 @@ em {
     #portfolio img:hover {
       box-shadow: none; } }
 
-#header {
-  padding-top: 1em; }
-  #header img {
-    width: 100%;
-    height: auto;
+.header {
+  padding-top: 2em; }
+  .header__title {
+    margin: 0; }
+  .header__logo {
     margin: 0 auto;
-    display: block; }
+    display: block !important; }
   @media screen and (max-width: 480px) {
-    #header {
+    .header {
       float: left;
       width: 91.66667%;
       margin-left: 4.16667%;
@@ -261,10 +261,13 @@ footer {
       margin-left: 2.08333%;
       margin-right: 2.08333%;
       margin-top: 16px; } }
+  .feature__icon {
+    margin: 0 auto;
+    display: block !important; }
   .feature h3 {
-    font-size: 30px;
     margin-top: 16px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 30px; }
   .feature p {
     margin-top: 0; }
     @media screen and (max-width: 480px) {
