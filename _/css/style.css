@@ -244,6 +244,11 @@ em {
     margin-left: 2.08333%;
     margin-right: 2.08333%; } }
 
+.about__portret img {
+  width: 200px;
+  margin: 0 auto;
+  display: block; }
+
 .feature {
   float: left;
   width: 29.16667%;

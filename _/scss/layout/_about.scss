@@ -1,2 +1,9 @@
-#about {
+.about {
+	&__portret {
+		img {
+			width: 200px;
+			margin: 0 auto;
+			display: block;
+		}
+	}
 }
