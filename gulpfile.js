@@ -33,8 +33,7 @@ gulp.task('svg', function() {
 				bust: false,
 				render: {
 					css: true
-				},
-				example: true
+				}
 			}
 		},
 		transform: [{ 
